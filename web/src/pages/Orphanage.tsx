@@ -12,6 +12,7 @@ import mapIcon from '../utils/mapIcon';
 import '../styles/pages/orphanage.css';
 
 
+
 interface Orphanage{
   latitude: number;
   longitude: number;
@@ -33,8 +34,8 @@ interface OrphanageParams{
 export default function Orphanage() {
 
   const params = useParams<OrphanageParams>();
-
   const [orphanage,setOrphanage] = useState<Orphanage>();
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   useEffect(() => {
     api.get(`orphanages/${params.id}`).then(response => {
@@ -53,12 +54,18 @@ export default function Orphanage() {
 
       <main>
         <div className="orphanage-details">
-          <img src={orphanage.images[0].url} alt={orphanage.name} />
+          <img src={orphanage.images[activeImageIndex].url} alt={orphanage.name} />
 
           <div className="images">
-           {orphanage.images.map(image =>{
+           {orphanage.images.map((image, index) =>{
              return(
-              <button key={image.id}className="active" type="button">
+              <button 
+              key={image.id}
+              className={activeImageIndex === index ? 'active' : ''}
+              type="button"
+              onClick={() => {
+                setActiveImageIndex(index)
+              }}>
               <img src={image.url} alt={orphanage.name} />
             </button>
              )
