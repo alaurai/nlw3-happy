@@ -1,12 +1,24 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { RectButton } from 'react-native-gesture-handler';
 import MapView ,{Marker, Callout, PROVIDER_GOOGLE} from 'react-native-maps';
 import { Feather } from '@expo/vector-icons';
 
 import mapMarker from '../images/map-marker.png';
 
 export default function OrphanagesMap(){
+
+  const navigation = useNavigation();
+
+  function handleNavigationToOrphanagesDetails(){
+    navigation.navigate('OrphanageDetails');
+  }
+  function handleToCreateOrpahanage(){
+    navigation.navigate('SelectMapPosition');
+  }
+
   return(
     <View style={styles.container}>
     <MapView
@@ -30,7 +42,7 @@ export default function OrphanagesMap(){
           longitude: -47.4766,
         }}
       >
-        <Callout tooltip={true} onPress={() => {}}>
+        <Callout tooltip={true} onPress={handleNavigationToOrphanagesDetails}>
           <View style={styles.calloutContainer}>
             <Text style={styles.calloutText}>Lar das Meninas</Text>
           </View>
@@ -39,9 +51,9 @@ export default function OrphanagesMap(){
     </MapView>
     <View style={styles.footer}>
       <Text style={styles.footerText}>2 orfanatos encontrados</Text>
-      <TouchableOpacity style={styles.createOrphanageButton} onPress={()=>{}}>
+      <RectButton style={styles.createOrphanageButton} onPress={handleToCreateOrpahanage}>
         <Feather name="plus" size={20} color="#fff"/>
-      </TouchableOpacity>
+      </RectButton>
     </View>
     <StatusBar style="auto" />
   </View>
