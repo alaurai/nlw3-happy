@@ -30,7 +30,9 @@ export default function Routes(){
           component={SelectMapPosition}
           options={{
             headerShown: true,
-            header: () => <Header title="Adicione um orfanato" showCancel={false} />
+            header: () => <Header title="Selecione um local no mapa" 
+            showCancel={true} 
+        />
           }}
         />
       </Navigator>
