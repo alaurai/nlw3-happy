@@ -7,6 +7,7 @@ const { Navigator, Screen } = createStackNavigator();
 import OrphanagesMap from './pages/OrphanagesMap';
 import OrphanageDetails from './pages/OrphanageDetails';
 import SelectMapPosition from './pages/CreateOrphanage/SelectMapPosition';
+import OrphanageData from './pages/CreateOrphanage/OrphanageData';
 import Header from './components/Header';
 
 export default function Routes(){
@@ -33,6 +34,14 @@ export default function Routes(){
             header: () => <Header title="Selecione um local no mapa" 
             showCancel={true} 
         />
+          }}
+        />
+        <Screen 
+          name="OrphanageData" 
+          component={OrphanageData}
+          options={{ 
+            headerShown: true,
+            header: (props) => <Header title="Informe os dados do orfanato" {...props} />,
           }}
         />
       </Navigator>
