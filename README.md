@@ -8,7 +8,7 @@
     <a href="README-pt.md">Portuguese</a>
  </p>
 <div align="center">
-  <sub>The NLW #3 project. Built with ❤︎ by
+  <sub>The NLW #3 project. Built with :heart: by
     <a href="https://github.com/alauraivani">Anna Laura</a> and
     <a href="https://github.com/alauraivani/nlw3-happy/graphs/contributors">
       contributors
