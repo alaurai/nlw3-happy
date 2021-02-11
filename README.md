@@ -5,7 +5,6 @@
 <p align="center">
   <a href="#computer-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#tada-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#construction_worker-how-to-run">How to run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#closed_book-license">License</a>
 </p>
@@ -36,8 +35,6 @@ Happy is an application that connects people to institutional care homes to make
 
 * [TypeScript](https://www.typescriptlang.org/)
 
-
-## :tada: Features
 
 ## :construction_worker: How to run
 
