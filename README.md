@@ -81,7 +81,7 @@ $ yarn start
 > Then read the QRCode with the app's Expo or run on emulator.
 
 ## :closed_book: License
-This project is under the MIT license. See the file [LICENSE](LICENSE.md) for more details.
+This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
 
 ---
 <div align="center">
