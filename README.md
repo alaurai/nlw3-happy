@@ -38,9 +38,14 @@ Happy is an application that connects people to institutional care homes to make
 
 ## :construction_worker: How to run
 
+```bash
+# Clone repository
+$ git clone https://github.com/alauraivani/nlw3-happy
+```
 
 ### Run API
-```
+
+```bash
 # Go to server folder
 $ cd nlw3-happy/backend
 
@@ -49,11 +54,11 @@ $ yarn install
 
 # Run Aplication
 $ yarn dev
-
 ```
 
 ### Run Web Project
-```
+
+```bash
 # Go to web folder
 $ cd nlw3-happy/web
 
@@ -67,7 +72,8 @@ $ yarn start
 ### Run Mobile Project
 > To run the mobile project you need a cellphone with the app of expo instaled or a emulator android/ios.
 Then, fork this repository and clone to your machine. Inside of the project's folder run the following commands:
-```
+
+```bash
 # Go to mobile folder
 $ cd nlw3-happy/mobile
 
