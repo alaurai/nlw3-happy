@@ -92,8 +92,8 @@ This project is under the MIT license. See the file [LICENSE](LICENSE) for more 
 ---
 <div align="center">
   <sub>The NLW #3 project. Built with :heart: by
-    <a href="https://github.com/alauraivani">Anna Laura</a> and
-    <a href="https://github.com/alauraivani/nlw3-happy/graphs/contributors">
+    <a href="https://github.com/alaurai">Ana Laura</a> and
+    <a href="https://github.com/alaurai/nlw3-happy/graphs/contributors">
       contributors
     </a>
   </sub>
